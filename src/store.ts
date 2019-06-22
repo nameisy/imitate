@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { getUserInfo } from './api/axios'
-import { logout } from './api/sso';
 
 Vue.use(Vuex)
 
@@ -26,10 +25,10 @@ export default new Vuex.Store({
               commit("updateUserInfo", response.data)
               resolve()
             } else {
-              logout()
+              // logout()
             }
           }).catch(error => {
-            logout()
+            // logout()
           });
         });
       },

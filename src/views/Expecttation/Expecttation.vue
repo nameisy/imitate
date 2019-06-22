@@ -34,9 +34,9 @@ import moExpectFrom from "@/components/ExpectFrom.vue"
   },
 })
 export default class Expecttation extends Vue {
-  private ruleForm = []
+  private ruleForm = [];
 
-  private addForm() {
+  private addForm(): void {
     let formData = {
         type: '',
         link: '',
@@ -47,7 +47,7 @@ export default class Expecttation extends Vue {
         tag: '',
         remark: ''
     }
-    this.ruleForm.push(formData)
+    this.ruleForm.push( formData )
   }
 
   private deleteForm( event: any , formIndex: number ): void {

@@ -28,7 +28,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { Getter } from "vuex-class"
-import { logout } from '../api/sso'
  
 @Component
 
@@ -36,7 +35,7 @@ export default class Header extends Vue {
   @Getter mail: any
 
   private quit() {
-    logout()
+    // logout()
   }
 }
 
