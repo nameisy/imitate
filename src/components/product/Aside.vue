@@ -6,7 +6,7 @@
                 <template slot="title">
                     <i class="el-icon-menu"></i>
                     <span>{{value.projectName}}</span>
-                    <i class="el-icon-circle-plus" slot="reference" @click.stop="addProduct(value.projectName)"></i>
+                    <!-- <i class="el-icon-circle-plus" slot="reference" @click.stop="addProduct(value.projectName)"></i> -->
                 </template>
                 <el-menu-item-group v-for="(val,indexExp) in value.name" :key="indexExp">
                     <el-menu-item :index="index + '-' + indexExp" @click="goDetails(val)">{{val}}</el-menu-item>
@@ -63,13 +63,13 @@ export default class Aside extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.el-icon-circle-plus{
-    font-size: 20px;
-    float: right;
-    margin-right: 18px;
-    margin-top: 16px;
-}
-.el-icon-circle-plus:hover{
-    color: brown
-}
+// .el-icon-circle-plus{
+//     font-size: 20px;
+//     float: right;
+//     margin-right: 18px;
+//     margin-top: 16px;
+// }
+// .el-icon-circle-plus:hover{
+//     color: brown
+// }
 </style>

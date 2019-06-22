@@ -34,7 +34,9 @@ import moExpectFrom from "@/components/ExpectFrom.vue"
   },
 })
 export default class Expecttation extends Vue {
-  private ruleForm = [];
+  private ruleForm = [
+    {}
+  ];
 
   private addForm(): void {
     let formData = {
