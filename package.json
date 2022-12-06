@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.4.5",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0",
